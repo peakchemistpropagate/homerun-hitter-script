@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#111a23"/>
+      <stop offset="100%" stop-color="#0a2a1c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#2ea043" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2ea043" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ballShade" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#c9d1d9" stop-opacity="0.15"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- distant stars -->
+  <circle cx="90" cy="50" r="2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="150" cy="90" r="1.5" fill="#ffffff" opacity="0.3"/>
+  <circle cx="1080" cy="60" r="2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="1130" cy="100" r="1.5" fill="#ffffff" opacity="0.3"/>
+  <circle cx="60" cy="200" r="1.5" fill="#ffffff" opacity="0.25"/>
+  <circle cx="1150" cy="220" r="1.5" fill="#ffffff" opacity="0.25"/>
+
+  <!-- outfield arc lines -->
+  <path d="M -50 320 Q 600 200 1250 320" stroke="#2ea043" stroke-width="2" fill="none" opacity="0.15"/>
+  <path d="M -50 350 Q 600 260 1250 350" stroke="#2ea043" stroke-width="2" fill="none" opacity="0.12"/>
+
+  <!-- decorative baseball top-right -->
+  <g opacity="0.18">
+    <circle cx="1000" cy="80" r="46" fill="url(#ballShade)"/>
+    <path d="M 968 55 Q 1000 80 968 105" stroke="#c9d1d9" stroke-width="2" fill="none"/>
+    <path d="M 1032 55 Q 1000 80 1032 105" stroke="#c9d1d9" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- decorative baseball bottom-left -->
+  <g opacity="0.14">
+    <circle cx="150" cy="290" r="34" fill="url(#ballShade)"/>
+    <path d="M 128 270 Q 150 290 128 310" stroke="#c9d1d9" stroke-width="2" fill="none"/>
+    <path d="M 172 270 Q 150 290 172 310" stroke="#c9d1d9" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- home plate diamond hint -->
+  <polygon points="600,300 630,320 600,340 570,320" fill="#c9d1d9" opacity="0.08"/>
+
+  <!-- soft ring accents -->
+  <circle cx="600" cy="180" r="150" fill="none" stroke="#2ea043" stroke-width="1" opacity="0.08"/>
+  <circle cx="600" cy="180" r="200" fill="none" stroke="#2ea043" stroke-width="1" opacity="0.05"/>
+
+  <text x="600" y="165" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="58.0" fill="#ffffff" font-weight="bold">
+    <tspan>Hit Home Runs Script</tspan>
+  </text>
+
+  <text x="600" y="220" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22.0" fill="#c9d1d9">
+    <tspan>Hit Home Runs Script — a lightweight Windows tool.</tspan>
+  </text>
+</svg>
